@@ -58,7 +58,7 @@ func DeleteAnggota(w http.ResponseWriter, r *http.Request) {
 	w.Write(res)
 }
 
-func UpdateAnggota(w http.ResponseWriter, r *http.Request) {
+func UpdateAnggotaById(w http.ResponseWriter, r *http.Request) {
 	var updateAnggota = &models.Anggota{}
 	utils.ParseBody(r, updateAnggota)
 	vars := mux.Vars(r)

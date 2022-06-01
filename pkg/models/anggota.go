@@ -9,7 +9,7 @@ import (
 var db *gorm.DB
 
 type Anggota struct {
-	gorm.model
+	gorm.Model
 	Nim          string `gorm:""json:"nim"`
 	Nama         string `json:"nama"`
 	JenisKelamin string `json: "jenis_kelamin`
